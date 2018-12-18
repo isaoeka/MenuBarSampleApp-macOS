@@ -685,8 +685,20 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="MenuBarSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7zz-Bl-vvd">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ChibaKun" id="fRP-n5-IPi"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7zz-Bl-vvd" secondAttribute="bottom" id="0yN-YY-MHi"/>
+                            <constraint firstAttribute="trailing" secondItem="7zz-Bl-vvd" secondAttribute="trailing" id="B3g-EN-WaZ"/>
+                            <constraint firstItem="7zz-Bl-vvd" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="NDL-da-5ew"/>
+                            <constraint firstItem="7zz-Bl-vvd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="fY4-nh-W9i"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -694,4 +706,7 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ChibaKun" width="300" height="300"/>
+    </resources>
 </document>
