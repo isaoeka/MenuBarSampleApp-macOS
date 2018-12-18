@@ -3,7 +3,7 @@ Sample application on menu bar
 
 Look here → https://qiita.com/isaoeka/items/7a46ab5b7a8c09bff68f
 
-![sample](Sample.jpg)
+![sample](Sample.gif)
 
 # Usage
 Please clone this repository and build with Xcode.
