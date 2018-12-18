@@ -9,19 +9,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    static func freshController() -> ViewController {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let identifier: NSStoryboard.SceneIdentifier = "ViewController"
+        guard let viewController = storyboard.instantiateController(withIdentifier: identifier) as? ViewController else { fatalError("...") }
+        return viewController
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
-
